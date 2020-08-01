@@ -1,0 +1,72 @@
+/* lighten background color */
+.md-autocomplete-suggestions-container,
+.md-autocomplete-suggestions-container.md-default-theme,
+body,
+html,
+md-content,
+md-sidenav,
+md-sidenav md-content,
+md-sidenav.md-default-theme,
+md-sidenav.md-default-theme md-content {
+    background: #FFFFF0 !important;
+}
+
+/* Fix up font-size and line spacing */
+#LSJ * {
+    font-size: initial;
+    line-height: 1.35;
+}
+
+#LSJ {
+    margin: 1em;
+}
+
+/* Remove bold from citations, enclose in brackets */
+#LSJ b {
+    font-weight: normal;
+}
+
+#LSJ b::before {
+    content: "["
+}
+
+#LSJ b::after {
+    content: "]"
+}
+
+/* Make definitions bold */
+#LSJ ul i {
+    font-weight: bold;
+}
+
+/* Fix margin of first list, as much as possible */
+#LSJ p > ul:first-of-type {
+    margin-top: 1em;
+    margin-left: -1em;
+}    
+
+
+#LSJ ul, #LSJ ol {
+    list-style: none;
+    margin-left: 1em;
+}
+
+
+#LSJ li {
+    clear: none;
+    margin-bottom: 1em;
+}
+
+
+#LSJ li .bullet {
+    display: inline;
+    font-weight: bold
+}
+
+#LSJ li .bullet::after {
+    content: ": "
+}
+
+#LSJ li .content {
+    float: none;
+}

@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Analogeion",
+    "version": "1.0",
+    "author": "Sean Redmond",
+    "description": "Improves readability of Logeion LSJ entries",
+
+    "icons": {
+	"48": "icons/analogeion-48.png"
+    },
+
+    "content_scripts": [
+	{
+	    "matches": ["*://*.logeion.uchicago.edu/*"],
+	    "css": ["analogeion.css"]
+	}
+    ]
+}
