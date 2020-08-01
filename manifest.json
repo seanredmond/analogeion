@@ -3,6 +3,7 @@
     "name": "Analogeion",
     "version": "1.0",
     "author": "Sean Redmond",
+    "homepage_url": "https://github.com/seanredmond/analogeion",
     "description": "Improves readability of Logeion LSJ entries",
 
     "icons": {
